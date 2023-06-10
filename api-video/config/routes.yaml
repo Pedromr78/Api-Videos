@@ -1,0 +1,53 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+index:
+    path: /index
+    controller: App\Controller\UserController::index
+    methods:    GET
+
+
+
+register:
+    path: /registro
+    controller: App\Controller\UserController::register
+    methods:    POST
+
+login:
+    path: /login
+    controller: App\Controller\UserController::login
+    methods:    POST
+
+
+edit:
+    path: /user/edit
+    controller: App\Controller\UserController::edit
+    methods:    PUT
+
+#Rutas Videos
+addvideo:
+    path: /videos/add
+    controller: App\Controller\VideoController::add
+    methods:    PUT
+    
+listvideos:
+    path: /videos/list
+    controller: App\Controller\VideoController::videos
+    methods:    GET
+
+listvideo:
+    path: /video/detail/{id}
+    controller: App\Controller\VideoController::video
+    methods:    GET
+removevideo:
+    path: /video/remove/{id}
+    controller: App\Controller\VideoController::remove
+    methods:    DELETE
+updatevideo:
+    path: /video/update/{id}
+    controller: App\Controller\VideoController::add
+    methods:    PUT
