@@ -32,7 +32,7 @@ edit:
 addvideo:
     path: /videos/add
     controller: App\Controller\VideoController::add
-    methods:    PUT
+    methods:    POST
     
 listvideos:
     path: /videos/list

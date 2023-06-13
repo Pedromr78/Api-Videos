@@ -141,14 +141,14 @@ class UserController extends AbstractController
                     $data = [
                         'status' => 'success',
                         'code' => 200,
-                       $signup
+                      'token' => $signup
                     ];
                 }else{
                     $signup= $jwt->signup($email,$pwd);
                     $data = [
                         'status' => 'success',
                         'code' => 200,
-                       $signup
+                      'user' => $signup
                     ];
                 }
 

@@ -199,7 +199,7 @@ class VideoController extends AbstractController
                             'total_items' => $total,
                             'pages' => $page,
                             'items_per_page' => $items_per_page,
-                            'total pages' => ceil($total / $items_per_page),
+                            'totalpages' => ceil($total / $items_per_page),
                             'videos' => $pagination
 
                         ];
